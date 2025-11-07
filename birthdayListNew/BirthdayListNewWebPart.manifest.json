@@ -1,0 +1,34 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "aae6ca63-ed46-4abc-89f6-1c8dac2c297f",
+  "alias": "BirthdayListNewWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab",
+    "SharePointFullPage"
+  ],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": { "default": "Advanced" },
+      "title": { "default": "Birthday List (New)" },
+      "description": {
+        "default": "Shows this month's birthdays using a Person column + Microsoft Graph."
+      },
+      "officeFabricIconFontName": "BirthdayCake",
+      "properties": {
+        "listTitle": "EmployeeBirthdays",
+        "personFieldInternalName": "Employee",
+        "showDepartment": true,
+        "showAge": false,
+        "maxItems": 5,
+        "headerIconUrl": "https://www.iconarchive.com/download/i136009/microsoft/fluentui-emoji-3d/Birthday-Cake-3d.1024.png"
+      }
+    }
+  ]
+}
